@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [TestNG]">
+  <test name="Test Dependency(failed)">
+    <classes>
+      <class name="testNG.TestNGDependency">
+        <methods>
+          <include name="loginToFacebook"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- testNG.TestNGDependency -->
+    </classes>
+  </test> <!-- Test Dependency(failed) -->
+</suite> <!-- Failed suite [TestNG] -->
