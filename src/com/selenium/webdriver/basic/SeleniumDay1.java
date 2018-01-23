@@ -1,7 +1,11 @@
 package com.selenium.webdriver.basic;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +19,9 @@ public class SeleniumDay1 {
 	
 	@BeforeMethod
 	public void invokeBrowser(){
-	
+		
+		Map<String, String> map = getParameter();
+		
 		try {
 			System.setProperty("webdriver.chrome.driver", "webDriver\\chromeDriver\\chromedriver.exe");
 			driver = new ChromeDriver();
@@ -24,7 +30,7 @@ public class SeleniumDay1 {
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
 			
-			driver.get("http://localhost:9090/ProjectManagement");
+			driver.get(map.get("appUrl"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -39,7 +45,7 @@ public class SeleniumDay1 {
 			driver.findElement(By.id("password")).sendKeys("businessuser");
 			Thread.sleep(3000);
 			driver.findElement(By.id("loginBtn")).click();
-		
+			Thread.sleep(2000);
 			driver.findElement(By.id("header-menu")).click();
 			Thread.sleep(3000);
 			driver.findElement(By.id("logout")).click();
@@ -49,6 +55,44 @@ public class SeleniumDay1 {
 			e.printStackTrace();
 		}
 		
+	}
+	
+	public Map<String, String> getParameter(){
+		
+		Map<String, String> map = readParameter();
+		return map;
+	}
+	
+	public Map<String, String> readParameter(){
+		
+		Properties prop = new Properties();
+		InputStream input = null;
+		Map<String, String> map = new HashMap<String, String>();
+		
+		try {
+			String fileName = "testCase.properties";
+			input = SeleniumDay1.class.getClassLoader().getResourceAsStream(fileName);
+			
+			if(input == null) {
+				System.out.println("Sorry, unable to find " + fileName);
+			}
+			
+			prop.load(input);
+			map.put("appUrl", prop.getProperty("appUrl"));
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (input != null) {
+				try {
+					input.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		
+		return map;
 	}
 	
 	@AfterMethod

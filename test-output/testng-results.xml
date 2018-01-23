@@ -1,166 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="19" passed="14">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNG" duration-ms="59" started-at="2018-01-16T09:15:03Z" finished-at="2018-01-16T09:15:03Z">
+  <suite name="Default suite" duration-ms="17661" started-at="2018-01-23T03:19:34Z" finished-at="2018-01-23T03:19:52Z">
     <groups>
     </groups>
-    <test name="Test Annotations" duration-ms="59" started-at="2018-01-16T09:15:03Z" finished-at="2018-01-16T09:15:03Z">
-      <class name="testNG.TestAnnotation">
-        <test-method status="PASS" signature="beforeAnyTests()[pri:0, instance:testNG.TestAnnotation@4dfa3a9d]" name="beforeAnyTests" is-config="true" duration-ms="15" started-at="2018-01-16T17:15:03Z" finished-at="2018-01-16T17:15:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeAnyTests -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testNG.TestAnnotation@4dfa3a9d]" name="beforeClass" is-config="true" duration-ms="19" started-at="2018-01-16T17:15:03Z" finished-at="2018-01-16T17:15:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeEveryMethod()[pri:0, instance:testNG.TestAnnotation@4dfa3a9d]" name="beforeEveryMethod" is-config="true" duration-ms="0" started-at="2018-01-16T17:15:03Z" finished-at="2018-01-16T17:15:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEveryMethod -->
-        <test-method status="PASS" signature="f1()[pri:0, instance:testNG.TestAnnotation@4dfa3a9d]" name="f1" duration-ms="1" started-at="2018-01-16T17:15:03Z" finished-at="2018-01-16T17:15:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f1 -->
-        <test-method status="PASS" signature="afterEveryMethod()[pri:0, instance:testNG.TestAnnotation@4dfa3a9d]" name="afterEveryMethod" is-config="true" duration-ms="1" started-at="2018-01-16T17:15:03Z" finished-at="2018-01-16T17:15:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method status="PASS" signature="f2()[pri:0, instance:testNG.TestAnnotation@4dfa3a9d]" name="f2" duration-ms="0" started-at="2018-01-16T17:15:03Z" finished-at="2018-01-16T17:15:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f2 -->
-        <test-method status="PASS" signature="afterEveryMethod()[pri:0, instance:testNG.TestAnnotation@4dfa3a9d]" name="afterEveryMethod" is-config="true" duration-ms="1" started-at="2018-01-16T17:15:03Z" finished-at="2018-01-16T17:15:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEveryMethod -->
-        <test-method status="PASS" signature="beforeEveryMethod()[pri:0, instance:testNG.TestAnnotation@4dfa3a9d]" name="beforeEveryMethod" is-config="true" duration-ms="0" started-at="2018-01-16T17:15:03Z" finished-at="2018-01-16T17:15:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEveryMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:testNG.TestAnnotation@4dfa3a9d]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-01-16T17:15:03Z" finished-at="2018-01-16T17:15:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterAllTheTests()[pri:0, instance:testNG.TestAnnotation@4dfa3a9d]" name="afterAllTheTests" is-config="true" duration-ms="0" started-at="2018-01-16T17:15:03Z" finished-at="2018-01-16T17:15:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterAllTheTests -->
-      </class> <!-- testNG.TestAnnotation -->
-    </test> <!-- Test Annotations -->
-  </suite> <!-- TestNG -->
-  <suite name="TestNG (0)" duration-ms="36625" started-at="2018-01-16T09:15:03Z" finished-at="2018-01-16T09:15:40Z">
-    <groups>
-    </groups>
-    <test name="Test Dependency" duration-ms="36625" started-at="2018-01-16T09:15:03Z" finished-at="2018-01-16T09:15:40Z">
-      <class name="testNG.TestNGDependency">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testNG.TestNGDependency@cb644e]" name="invokeBrowser" duration-ms="18175" started-at="2018-01-16T17:15:19Z" finished-at="2018-01-16T17:15:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="loginToFacebook()[pri:0, instance:testNG.TestNGDependency@cb644e]" name="loginToFacebook" duration-ms="2837" started-at="2018-01-16T17:15:37Z" depends-on-methods="testNG.TestNGDependency.invokeBrowser" finished-at="2018-01-16T17:15:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToFacebook -->
-      </class> <!-- testNG.TestNGDependency -->
-      <class name="testNG.TestAssertion">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testNG.TestAssertion@5cb9f472]" name="invokeBrowser" is-config="true" duration-ms="15520" started-at="2018-01-16T17:15:03Z" finished-at="2018-01-16T17:15:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="getTitle()[pri:0, instance:testNG.TestAssertion@5cb9f472]" name="getTitle" duration-ms="36" started-at="2018-01-16T17:15:40Z" finished-at="2018-01-16T17:15:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getTitle -->
-      </class> <!-- testNG.TestAssertion -->
-    </test> <!-- Test Dependency -->
-  </suite> <!-- TestNG (0) -->
-  <suite name="Test TrueCi Login" duration-ms="22808" started-at="2018-01-16T09:15:40Z" finished-at="2018-01-16T09:16:03Z">
-    <groups>
-    </groups>
-    <test name="Test" duration-ms="22808" started-at="2018-01-16T09:15:40Z" finished-at="2018-01-16T09:16:03Z">
+    <test name="Default test" duration-ms="17661" started-at="2018-01-23T03:19:34Z" finished-at="2018-01-23T03:19:52Z">
       <class name="com.selenium.webdriver.basic.SeleniumDay1">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:com.selenium.webdriver.basic.SeleniumDay1@73846619]" name="invokeBrowser" is-config="true" duration-ms="11946" started-at="2018-01-16T17:15:40Z" finished-at="2018-01-16T17:15:52Z">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:com.selenium.webdriver.basic.SeleniumDay1@32d2fa64]" name="invokeBrowser" is-config="true" duration-ms="5471" started-at="2018-01-23T11:19:35Z" finished-at="2018-01-23T11:19:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="findElement()[pri:0, instance:com.selenium.webdriver.basic.SeleniumDay1@73846619]" name="findElement" duration-ms="10177" started-at="2018-01-16T17:15:52Z" finished-at="2018-01-16T17:16:02Z">
+        <test-method status="PASS" signature="findElement()[pri:0, instance:com.selenium.webdriver.basic.SeleniumDay1@32d2fa64]" name="findElement" duration-ms="11567" started-at="2018-01-23T11:19:40Z" finished-at="2018-01-23T11:19:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findElement -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.selenium.webdriver.basic.SeleniumDay1@73846619]" name="afterMethod" is-config="true" duration-ms="684" started-at="2018-01-16T17:16:02Z" finished-at="2018-01-16T17:16:03Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.selenium.webdriver.basic.SeleniumDay1@32d2fa64]" name="afterMethod" is-config="true" duration-ms="580" started-at="2018-01-23T11:19:52Z" finished-at="2018-01-23T11:19:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- com.selenium.webdriver.basic.SeleniumDay1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Test TrueCi Login -->
-  <suite name="TestNG (2)" duration-ms="17835" started-at="2018-01-16T09:16:03Z" finished-at="2018-01-16T09:16:21Z">
-    <groups>
-    </groups>
-    <test name="Test Dependency" duration-ms="9788" started-at="2018-01-16T09:16:03Z" finished-at="2018-01-16T09:16:13Z">
-      <class name="testNG.TestNGDependency">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testNG.TestNGDependency@60c6f5b]" name="invokeBrowser" duration-ms="7419" started-at="2018-01-16T17:16:03Z" finished-at="2018-01-16T17:16:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="loginToFacebook()[pri:0, instance:testNG.TestNGDependency@60c6f5b]" name="loginToFacebook" duration-ms="2368" started-at="2018-01-16T17:16:10Z" depends-on-methods="testNG.TestNGDependency.invokeBrowser" finished-at="2018-01-16T17:16:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToFacebook -->
-      </class> <!-- testNG.TestNGDependency -->
-    </test> <!-- Test Dependency -->
-    <test name="Test Assertion" duration-ms="8042" started-at="2018-01-16T09:16:13Z" finished-at="2018-01-16T09:16:21Z">
-      <class name="testNG.TestAssertion">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:testNG.TestAssertion@a67c67e]" name="invokeBrowser" is-config="true" duration-ms="8029" started-at="2018-01-16T17:16:13Z" finished-at="2018-01-16T17:16:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="getTitle()[pri:0, instance:testNG.TestAssertion@a67c67e]" name="getTitle" duration-ms="13" started-at="2018-01-16T17:16:21Z" finished-at="2018-01-16T17:16:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getTitle -->
-      </class> <!-- testNG.TestAssertion -->
-    </test> <!-- Test Assertion -->
-  </suite> <!-- TestNG (2) -->
-  <suite name="TestNG (1)" duration-ms="8" started-at="2018-01-16T09:16:03Z" finished-at="2018-01-16T09:16:03Z">
-    <groups>
-      <group name="B">
-        <method signature="TestGrouping.f2()[pri:0, instance:testNG.TestGrouping@55d56113]" name="f2" class="testNG.TestGrouping"/>
-        <method signature="TestGroupingNew.m1()[pri:0, instance:testNG.TestGroupingNew@148080bb]" name="m1" class="testNG.TestGroupingNew"/>
-      </group> <!-- B -->
-      <group name="D">
-        <method signature="TestGroupingNew.m2()[pri:0, instance:testNG.TestGroupingNew@148080bb]" name="m2" class="testNG.TestGroupingNew"/>
-        <method signature="TestGroupingNew.m3()[pri:0, instance:testNG.TestGroupingNew@148080bb]" name="m3" class="testNG.TestGroupingNew"/>
-        <method signature="TestGroupingNew.m4()[pri:0, instance:testNG.TestGroupingNew@148080bb]" name="m4" class="testNG.TestGroupingNew"/>
-      </group> <!-- D -->
-    </groups>
-    <test name="Test Grouping" duration-ms="8" started-at="2018-01-16T09:16:03Z" finished-at="2018-01-16T09:16:03Z">
-      <class name="testNG.TestGrouping">
-        <test-method status="PASS" signature="f2()[pri:0, instance:testNG.TestGrouping@55d56113]" name="f2" duration-ms="0" started-at="2018-01-16T17:16:03Z" finished-at="2018-01-16T17:16:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f2 -->
-      </class> <!-- testNG.TestGrouping -->
-      <class name="testNG.TestGroupingNew">
-        <test-method status="PASS" signature="m1()[pri:0, instance:testNG.TestGroupingNew@148080bb]" name="m1" duration-ms="0" started-at="2018-01-16T17:16:03Z" finished-at="2018-01-16T17:16:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- m1 -->
-        <test-method status="PASS" signature="m2()[pri:0, instance:testNG.TestGroupingNew@148080bb]" name="m2" duration-ms="0" started-at="2018-01-16T17:16:03Z" finished-at="2018-01-16T17:16:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- m2 -->
-        <test-method status="PASS" signature="m3()[pri:0, instance:testNG.TestGroupingNew@148080bb]" name="m3" duration-ms="3" started-at="2018-01-16T17:16:03Z" finished-at="2018-01-16T17:16:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- m3 -->
-        <test-method status="PASS" signature="m4()[pri:0, instance:testNG.TestGroupingNew@148080bb]" name="m4" duration-ms="0" started-at="2018-01-16T17:16:03Z" finished-at="2018-01-16T17:16:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- m4 -->
-      </class> <!-- testNG.TestGroupingNew -->
-    </test> <!-- Test Grouping -->
-  </suite> <!-- TestNG (1) -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
