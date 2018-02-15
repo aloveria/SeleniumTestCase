@@ -1,5 +1,7 @@
 package com.selenium.webdriver.basic;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
@@ -38,23 +40,9 @@ public class SeleniumDay1 {
 	}
 	
 	@Test
-	public void findElement(){
-		try {
-			
-			driver.findElement(By.id("username")).sendKeys("businessuser");
-			driver.findElement(By.id("password")).sendKeys("businessuser");
-			Thread.sleep(3000);
-			driver.findElement(By.id("loginBtn")).click();
-			Thread.sleep(2000);
-			driver.findElement(By.id("header-menu")).click();
-			Thread.sleep(3000);
-			driver.findElement(By.id("logout")).click();
-			Thread.sleep(3000);
-			
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		
+	public void getPageTitle(){
+		assertTrue(driver.getTitle().contains("Project Management"));
+		System.out.println("Page Title: " + driver.getTitle());
 	}
 	
 	public Map<String, String> getParameter(){
