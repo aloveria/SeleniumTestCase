@@ -41,7 +41,7 @@ public class SeleniumDay1 {
 	
 	@Test
 	public void getPageTitle(){
-		assertTrue(driver.getTitle().contains("Project Management"));
+		assertTrue(driver.getTitle().contains("Login"));
 		System.out.println("Page Title: " + driver.getTitle());
 	}
 	
